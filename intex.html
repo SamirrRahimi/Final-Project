@@ -5,59 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/AOS/aos.css">
     <link rel="stylesheet" href="assets/bootstrap/css/css.css">
     <link rel="stylesheet" href="assets/css/mainStyle.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+    <nav class="navbar navbar-expand-lg glassy-navbar sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-lg-5  " href="#">SR</a>
+            <a class="navbar-brand me-lg-5" href="#">SR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                <ul class="navbar-nav d-flex flex-row justify-content-center mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#Home">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="#About">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-2">
                         <a class="nav-link" href="#Skill">Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-" href="#certificates">Certificates</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#certificates">Certificates</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-" href="#contact">contact</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                 <button id="toggle-mode" class="btn rounded-pill">Toggle Dark Mode</button>
             </div>
         </div>
     </nav>
+
     <main class="main">
-        <section class="section" id="Home">
+        <section class="section dark-bg home-bg" >
             <div class="container-fluid Home">
                 <div class="row">
-                    <div class="col-md-4  mb-4 mb-md-0">
+                    <div class="col-md-4  mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
                         <img class="img-fluid img" src="assets/images/me4.jpg"
                             alt="Portrait of Samir Rahimi, frontend developer and IT support specialist">
                     </div>
-                    <div class="col-8 my-name">
-                        <h2 style="font-size: 3rem; font-weight:bold; "><span>Hi I'm</span> Samir Rahimi</h2>
+                    <div class="col-8 my-name" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
+                        <h2 style="font-size: 3rem; font-weight:bold; "><span class="highlight-text">Hi I'm</span> Eshaq Rahimi</h2>
                         <h1 style="font-size: 4rem; font-weight:bold;">Frontend developer& <br> IT support</h1>
                     </div>
                     <div class="col-9 offset-3 p-5 me-5">
-                        <button class="btn btn-lg" style="background-color:green; color: white;">Contact me</button>
-                        <button class="btn btn-lg btn-outline-secondary">Contact me</button>
+                        <a class="btn btn-lg" style="background-color:green; color: white;" href="#contact">Contact
+                            me</a>
+                        <a class="btn btn-lg btn-outline-secondary" href="#certificates">Certificates</a>
                     </div>
                 </div>
             </div>
@@ -65,14 +65,15 @@
         <section class="section " id="About">
             <div class="container About">
                 <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
-                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="col-12 col-md-4 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="500"
+                        data-aos-duration="1000">
                         <img class="img-fluid rounded-5" src="assets/images/me2.png"
                             alt="Portrait of Samir Rahimi, frontend developer and IT support specialist">
                     </div>
-                    <div class="col-7 offset-1">
+                    <div class="col-7 offset-1" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
                         <h1 class="section-title text-center">About Me</h1>
                         <div class="fs-5 fw-bold pt-5 ">
-                            <p>Hello i'm Samir Rahimi a passionate Front-end web developer from Afghanistan I specialize
+                            <p>Hello i'm Eshaq Rahimi a passionate Front-end web developer from Afghanistan I specialize
                                 in
                                 building responsive modern and user-friendly websites. I love transforming creative
                                 ideas into clean, interactive digital experiences.
@@ -94,12 +95,12 @@
                 </div>
             </div>
         </section>
-        <section class="section skill" id="Skill">
+        <section class="section skill dark-bg" id="Skill">
             <div class="container skill-section">
                 <h2 class="text-center mb-5 " style="color: green;"> My Skills</h2>
                 <div class="row g-4">
                     <!-- Front-End -->
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-4 d-flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
                         <div class="card p-4 h-100 w-100">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title"><i class="bi bi-code-slash skill-icon"></i>Front-End Development
@@ -134,7 +135,7 @@
                         </div>
                     </div>
                     <!-- IT & Technical -->
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-4 d-flex" data-aos="fade-Up" data-aos-delay="500" data-aos-duration="1000">
                         <div class="card p-4 h-100 w-100">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title"><i class="bi bi-cpu skill-icon"></i>IT & Technical</h5>
@@ -164,7 +165,7 @@
                         </div>
                     </div>
                     <!-- Design & UI -->
-                    <div class="col-md-4 d-flex">
+                    <div class="col-md-4 d-flex" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
                         <div class="card p-4 h-100 w-100">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title"><i class="bi bi-palette-fill skill-icon"></i>Design & UI</h5>
@@ -192,13 +193,13 @@
                 </div>
             </div>
         </section>
-        <section id="certificates" class="py-5 bg-white">
+        <section id="certificates" class="py-5 ">
             <div class="container">
                 <h2 class="text-center  mb-5" style="color: green;">My Certificates</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="" class="card-img-top" alt="Certificate 2">
+                            <img src="assets/images/C-1.png" class="card-img-top" alt="Certificate 2">
                             <div class="card-body">
                                 <h5 class="card-title " style="color: green;">Information Technology</h5>
                                 <p class="card-text">Basic to advanced IT knowledge including Networking, OS, and Data
@@ -210,9 +211,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-Up" data-aos-delay="500" data-aos-duration="1000">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Certificate 1">
+                            <img src="assets/images/C-3.jpg" class="card-img-top" alt="Certificate 1">
                             <div class="card-body">
                                 <h5 class="card-title " style="color: green;">Front-End Development</h5>
                                 <p class="card-text">Completed full course including HTML5, CSS3, JavaScript & React.js
@@ -223,9 +224,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4"  data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
                         <div class="card h-100 shadow-sm border-0">
-                            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Certificate 3">
+                            <img src="assets/images/C-2.jpeg" class="card-img-top" alt="Certificate 3">
                             <div class="card-body">
                                 <h5 class="card-title " style="color: green;">Ethical Hacking</h5>
                                 <p class="card-text">Trained in system protection, virus removal, and ethical security
@@ -240,7 +241,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="py-5 bg-light">
+        <section id="contact" class="py-5 dark-bg"  data-aos="fade-Up" data-aos-delay="300" data-aos-duration="1000">
             <div class="container">
                 <h2 class="text-center  mb-4" style="color: green;">Contact Me</h2>
                 <div class="row g-4">
@@ -292,8 +293,8 @@
     </main>
     <footer class=" text-white pt-4 pb-3 mt-5" style="background-color: green;">
         <div class="container text-center">
-            <p class="mb-1 fw-bold fs-5">🌐 Samir Rahimi | Front-End Developer & IT Enthusiast</p>
-            <p class="mb-2">📧 Email: samir@example.com | 📞 Phone: +93 700 000 000</p>
+            <p class="mb-1 fw-bold fs-5">🌐 Eshaq Rahimi | Front-End Developer & IT Enthusiast</p>
+            <p class="mb-2">📧 Email: samirr.rahimi@gmail.com | 📞 Phone: +93 726 299 872</p>
             <div class="mb-3">
                 <a href="https://github.com/yourusername" class="text-white me-3" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/yourprofile" class="text-white me-3" target="_blank">LinkedIn</a>
@@ -303,6 +304,10 @@
         </div>
     </footer>
     <!-- Bootstrap JS (optional, for interactive components) -->
+    <script src="assets/AOS/aos.js"></script>
+    <script>
+        AOS.init(); 
+    </script>
     <script src="assets/js/javascript.js"></script>
     <script src="assets/bootstrap/js/javascript.js"></script>
 

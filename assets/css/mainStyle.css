@@ -1,154 +1,169 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .body {
-    font-family: Arial;
-    padding: 0px;
-    margin: 0px;
+  font-family: Arial;
+  padding: 0px;
+  margin: 0px;
 }
 
 .navbar {
-    background-color: #e0ffe0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-    transition: background-color 0.4s ease;
+  background-color: #e0ffe0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  transition: background-color 0.4s ease;
 }
 
 .navbar.scrolled {
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.8rem;
-    color : green;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: green;
 }
 
 .nav-item {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.glassy-navbar {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: green !important;
 }
 
 .img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    -webkit-box-shadow: 8px 9px 48px 7px green;
-    box-shadow: 8px 9px 48px 7px green;
-    transition: .7s ease;
-    margin-top: 100px;
-    margin-left: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-box-shadow: 8px 9px 48px 7px green;
+  box-shadow: 8px 9px 48px 7px green;
+  transition: .7s ease;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
 .img:hover {
-    -webkit-box-shadow: 8px 9px 48px 19px #00FF2D;
-    box-shadow: 8px 9px 48px 19px #00FF2D;
+  -webkit-box-shadow: 8px 9px 48px 19px #00FF2D;
+  box-shadow: 8px 9px 48px 19px #00FF2D;
 }
 
 .my-name {
-    font-family: Arial;
-    margin-top: 130px;
-    margin-left: -60px;
+  font-family: Arial;
+  margin-top: 130px;
+  margin-left: -60px;
 }
 
 .my-name h2 {
-    color: green;
-    letter-spacing: 3px;
+  color: green;
+  letter-spacing: 3px;
 }
 
 .my-name h2 span {
-    color: black;
-    font-family: Arial;
-    font-weight: bold;
+  color: black;
+  font-family: Arial;
+  font-weight: bold;
 }
 
 .my-name h1 {
-    color: green;
+  color: green;
 }
 
-.Home {
-    background-color: #e8fff0;
-    /* Soft mint */
-    padding: 60px 20px;
-    height: 85vh;
+.home-bg {
+  background-color: #e8fff0;
+  /* Soft mint */
+  padding: 60px 20px;
+  height: 85vh;
 }
 
 .About {
-    text-align: justify;
-    padding: 60px 20px;
-    height: 100vh;
+  text-align: justify;
+  padding: 60px 20px;
+  height: 100vh;
 }
 
 .About img {
-    -webkit-box-shadow: 36px 16px 50px -9px #00FF2D;
-    box-shadow: 36px 16px 50px -9px #00FF2D;
+  -webkit-box-shadow: 36px 16px 50px -9px #00FF2D;
+  box-shadow: 36px 16px 50px -9px #00FF2D;
 }
 
 .skill {
-    background-color: #e8fff0;
-    height: 90vh;
+  background-color: #e8fff0;
+  height: 90vh;
 }
 
 .skill-section {
-    padding: 60px 20px;
+  padding: 60px 20px;
 }
 
 .card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
-    transition: transform 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
 }
 
 .card-title {
-    font-weight: bold;
-    color: green;
+  font-weight: bold;
+  color: green;
 }
 
 .progress {
-    height: 8px;
-    border-radius: 10px;
+  height: 8px;
+  border-radius: 10px;
 }
 
 .progress-bar {
-    background-color:green;
+  background-color: green;
 }
 
 .skill-icon {
-    font-size: 1.5rem;
-    margin-right: 8px;
-    color: green;
+  font-size: 1.5rem;
+  margin-right: 8px;
+  color: green;
 }
 
 .skill-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
 }
 
 .btn-outline-secondary {
-  color: green; 
-  border-color: green; 
+  color: green;
+  border-color: green;
 }
 
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus,
 .btn-outline-secondary:active {
-  color: white; 
-  background-color: green; 
-  border-color: green; 
+  color: white;
+  background-color: green;
+  border-color: green;
 }
 
 
@@ -224,3 +239,67 @@ html {
   }
 }
 
+
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Adjust navbar, cards, etc. */
+body.dark-mode .navbar,
+body.dark-mode .glassy-navbar {
+  background-color: rgba(18, 18, 18, 0.8) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-link {
+  color: white !important;
+}
+
+body.dark-mode .progress-bar {
+  background-color: limegreen;
+}
+
+body.dark-mode footer {
+  background-color: hsl(120, 100%, 20%) !important;
+  color: white;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: green;
+  border-color: green;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: green;
+  color: white;
+}
+
+body.dark-mode .dark-bg{
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .card{
+  background: #2f2d2d;
+  color: white;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2f2d2d;
+  color: white;
+  border: 1px solid green;
+}
+
+
+
+body.dark-mode .highlight-text {
+  color: #ffffff;
+}
